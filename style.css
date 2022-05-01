@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.healthBar {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 30px;
+}
+
+.healthLine-container {
+  position: relative;
+  width: 100%;
+  border: 4px solid white;
+}
+
+.healthLine-container.left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.healthLine-container .healthLine {
+  background-color: red;
+  height: 30px;
+  width: 100%;
+}
+
+#playerHealth {
+  position: absolute;
+  background: #818cf8;
+  width: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 30px;
+}
+
+#enemyHealth {
+  position: absolute;
+  background: #818cf8;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.timer {
+  background-color: black;
+  width: 100px;
+  height: 50px;
+  flex-shrink: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: 4px solid white;
+  justify-content: center;
+}

@@ -1,0 +1,44 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="healthBar">
+      <div class="healthLine-container left">
+        <div class="healthLine"></div>
+        <div id="playerHealth"></div>
+      </div>
+      <div class="timer" id="timer">10</div>
+      <div class="healthLine-container right">
+        <div class="healthLine"></div>
+        <div id="enemyHealth"></div>
+      </div>
+    </div>
+    <div
+      id="winnerText"
+      style="
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: none;
+      "
+    >
+      tie
+    </div>
+    <canvas></canvas>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="js/index.js"></script>
+</body>
